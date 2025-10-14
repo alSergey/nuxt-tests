@@ -5,5 +5,6 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false,
     scan: false,
-  }
+  },
+  components: false,
 })
