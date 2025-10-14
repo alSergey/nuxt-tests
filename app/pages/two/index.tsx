@@ -2,13 +2,14 @@ import { defineComponent } from "vue";
 
 import { NuxtLink } from '#components'
 
-export default defineComponent({
-    name: 'OnePage',
-    setup() {
+import styles from './index.module.css'
 
+export default defineComponent({
+    name: 'TwoPage',
+    setup() {
         return () => (
-            <div>
-                <div>Это one страница</div>
+            <div class={styles.container}>
+                <h3>Это two страница</h3>
                 <NuxtLink to="/">Main page</NuxtLink>
             </div>
         )
