@@ -7,4 +7,14 @@ export default defineNuxtConfig({
     scan: false,
   },
   components: false,
+  sourcemap: {
+    client: 'hidden',
+  },
+  modules: ['@sentry/nuxt/module'],
+  sentry: {
+    sourceMapsUploadOptions: {
+      org: 'ysnp',
+      project: 'javascript-nuxt',
+    },
+  },
 })
